@@ -16,14 +16,14 @@ class MyApp extends StatelessWidget {
                 CircleAvatar(
                   radius: 50.0,
                   backgroundImage: AssetImage('images/nftDp.jpg'),
-                  child: Text(
-                    'Paul Fidelis',
-                    style: TextStyle(
-                        fontSize: 40,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: 'Pacifico-Regular'),
-                  ),
+                ),
+                Text(
+                  'Paul Fidelis',
+                  style: TextStyle(
+                      fontSize: 40,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Pacifico-Regular'),
                 ),
                 Text('Flutter Developer',
                     style: TextStyle(
