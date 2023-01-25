@@ -9,9 +9,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-            backgroundColor: Colors.teal,
+            backgroundColor: Color.fromARGB(255, 190, 5, 190),
             body: SafeArea(
                 child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 CircleAvatar(
                   radius: 50.0,
@@ -33,27 +34,44 @@ class MyApp extends StatelessWidget {
                       letterSpacing: 2.5,
                       fontWeight: FontWeight.bold,
                     )),
-                Container(
+                Card(
                   color: Colors.white,
                   margin:
                       EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                  padding: EdgeInsets.all(10.0),
-                  child: Row(
-                    children: <Widget>[
-                      Icon(
+                  child: Padding(
+                    padding: EdgeInsets.all(10.0),
+                    child: ListTile(
+                      leading: Icon(
                         Icons.phone,
                         color: Colors.teal,
                       ),
-                      SizedBox(
-                        width: 10.0,
-                      ),
-                      Text('09072210193',
+                      title: Text('09072210103',
                           style: TextStyle(
                             color: Colors.teal.shade900,
                             fontFamily: 'SourceSansPro-Regular',
                             fontSize: 20.0,
-                          ))
-                    ],
+                          )),
+                    ),
+                  ),
+                ),
+                Card(
+                  color: Colors.white,
+                  margin:
+                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: Padding(
+                    padding: EdgeInsets.all(10.0),
+                    child: ListTile(
+                      leading: Icon(
+                        Icons.email,
+                        color: Colors.teal,
+                      ),
+                      title: Text('holubakin@gmail.com',
+                          style: TextStyle(
+                            color: Colors.teal.shade900,
+                            fontFamily: 'SourceSansPro-Regular',
+                            fontSize: 20.0,
+                          )),
+                    ),
                   ),
                 ),
               ],
