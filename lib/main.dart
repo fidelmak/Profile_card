@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-            backgroundColor: Color.fromARGB(255, 190, 5, 190),
+            backgroundColor: Colors.pink[900],
             body: SafeArea(
                 child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
                 Text('Flutter Developer',
                     style: TextStyle(
                       fontFamily: 'SourceSansPro-Regular',
-                      color: Colors.teal[100],
+                      color: Colors.pink[100],
                       fontSize: 20.0,
                       letterSpacing: 2.5,
                       fontWeight: FontWeight.bold,
@@ -43,11 +43,11 @@ class MyApp extends StatelessWidget {
                     child: ListTile(
                       leading: Icon(
                         Icons.phone,
-                        color: Colors.teal,
+                        color: Colors.pink,
                       ),
                       title: Text('09072210103',
                           style: TextStyle(
-                            color: Colors.teal.shade900,
+                            color: Colors.pink.shade900,
                             fontFamily: 'SourceSansPro-Regular',
                             fontSize: 20.0,
                           )),
@@ -63,11 +63,11 @@ class MyApp extends StatelessWidget {
                     child: ListTile(
                       leading: Icon(
                         Icons.email,
-                        color: Colors.teal,
+                        color: Colors.pink,
                       ),
                       title: Text('holubakin@gmail.com',
                           style: TextStyle(
-                            color: Colors.teal.shade900,
+                            color: Colors.pink.shade900,
                             fontFamily: 'SourceSansPro-Regular',
                             fontSize: 20.0,
                           )),
